@@ -38,6 +38,14 @@ options:
   -j, --json  Print album in json format
 ```
 
+<!-- ROADMAP -->
+## Roadmap
+
+- [x] Get album picker working
+- [ ] Restructure into a Python package
+- [ ] Publish package to PyPI
+- [ ] Add documentation for use with pipx
+
 <!-- LICENSE -->
 ## License
 
