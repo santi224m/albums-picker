@@ -25,7 +25,7 @@ if __name__ == "__main__":
 		prog='1001-albums-picker',
 		description='Choose a random album from "1001 Albums You Must Hear Before You Die"',
   )
-	parser.add_argument('-j', '--json', action='store_true')
+	parser.add_argument('-j', '--json', action='store_true', help='Print album in json format')
 	args = parser.parse_args()
   
   # Open albums list
