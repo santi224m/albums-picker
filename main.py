@@ -1,3 +1,4 @@
+import  argparse
 import json
 import random
 
@@ -26,8 +27,23 @@ def print_album(album):
 	print("Year: ", album.year)
 
 if __name__ == "__main__":
+  # Setup argument parser
+	parser = argparse.ArgumentParser(
+		prog='1001-albums-picker',
+		description='Choose a random album from "1001 Albums You Must Hear Before You Die"',
+  )
+	parser.add_argument('-j', '--json', action='store_true')
+	args = parser.parse_args()
+  
+  # Open albums list
 	with open(ALBUMS_JSON_FILE) as f:
 		albums = json.load(f)
 	
+	# Choose random album
 	rand_album = get_rand_album(albums)
-	print_album(rand_album)
+
+	# Return in json format if '-j' or '--json' flag is set
+	if args.json:
+		print(rand_album.to_json())
+	else:
+		print_album(rand_album)
