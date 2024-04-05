@@ -41,11 +41,11 @@ options:
 <!-- LICENSE -->
 ## License
 
-Distributed under the MIT License. See `LICENSE.txt` for more information.
+Distributed under the MIT License. See `LICENSE` for more information.
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [license-shield]: https://img.shields.io/github/license/santi224m/1001-albums-picker.svg?style=for-the-badge
-[license-url]: https://github.com/santi224m/1001-albums-picker/blob/master/LICENSE.txt
+[license-url]: https://github.com/santi224m/1001-albums-picker/blob/main/LICENSE
 [terminal-screenshot]: images/screenshot.png
 <a href="https://www.flaticon.com/free-icons/vinyl" title="vinyl icons">Vinyl icons created by Freepik - Flaticon</a>
