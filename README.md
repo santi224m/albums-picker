@@ -42,6 +42,6 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[license-shield]: https://img.shields.io/github/license/github_username/repo_name.svg?style=for-the-badge
-[license-url]: https://github.com/github_username/repo_name/blob/master/LICENSE.txt
+[license-shield]: https://img.shields.io/github/license/santi224m/1001-albums-picker.svg?style=for-the-badge
+[license-url]: https://github.com/santi224m/1001-albums-picker/blob/master/LICENSE.txt
 [terminal-screenshot]: images/screenshot.png
