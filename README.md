@@ -3,8 +3,11 @@
 <!-- Project Title and description -->
 <br />
 <div align="center">
+  <a href="https://github.com/santi224m/1001-albums-picker">
+    <img src="images/logo.png" alt="Logo" width="80" height="80">
+  </a>
 
-<h3 align="center">1001 Albums Picker</h3>
+  <h3 align="center">1001 Albums Picker</h3>
 
   <p align="center">
     Picks a random album from <a href="https://en.wikipedia.org/wiki/1001_Albums_You_Must_Hear_Before_You_Die">1001 Albums You Must Hear Before You Die</a>
@@ -45,3 +48,4 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 [license-shield]: https://img.shields.io/github/license/santi224m/1001-albums-picker.svg?style=for-the-badge
 [license-url]: https://github.com/santi224m/1001-albums-picker/blob/master/LICENSE.txt
 [terminal-screenshot]: images/screenshot.png
+<a href="https://www.flaticon.com/free-icons/vinyl" title="vinyl icons">Vinyl icons created by Freepik - Flaticon</a>
