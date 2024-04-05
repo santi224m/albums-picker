@@ -7,7 +7,7 @@
 <h3 align="center">1001 Albums Picker</h3>
 
   <p align="center">
-    Picks a random album from [1001 Albums You Must Hear Before You Die](https://en.wikipedia.org/wiki/1001_Albums_You_Must_Hear_Before_You_Die)
+    Picks a random album from <a href="https://en.wikipedia.org/wiki/1001_Albums_You_Must_Hear_Before_You_Die">1001 Albums You Must Hear Before You Die</a>
   </p>
 </div>
 
