@@ -1,8 +1,9 @@
 import  argparse
 import json
 import random
-
 from album import Album
+from rich_printer import rich_print_album
+
 
 ALBUMS_JSON_FILE = "albums.json"
 
@@ -19,12 +20,6 @@ def get_rand_album(albums):
 	year = selected_album['Date']
 	album = Album(title, artist, year)
 	return album
-
-def print_album(album):
-	"""Print the choosen album"""	
-	print("Album: ", album.title)
-	print("Artist: ", album.artist)
-	print("Year: ", album.year)
 
 if __name__ == "__main__":
   # Setup argument parser
@@ -46,4 +41,4 @@ if __name__ == "__main__":
 	if args.json:
 		print(rand_album.to_json())
 	else:
-		print_album(rand_album)
+		rich_print_album(rand_album)
