@@ -2,8 +2,6 @@ import  argparse
 import json
 import random
 from album import Album
-from rich_printer import rich_print_album
-
 
 ALBUMS_JSON_FILE = "albums.json"
 
@@ -41,4 +39,4 @@ if __name__ == "__main__":
 	if args.json:
 		print(rand_album.to_json())
 	else:
-		rich_print_album(rand_album)
+		rand_album.print_album()
