@@ -29,7 +29,7 @@ if __name__ == "__main__":
 	args = parser.parse_args()
   
   # Open albums list
-	with open(ALBUMS_JSON_FILE) as f:
+	with open(ALBUMS_JSON_FILE, encoding='utf8') as f:
 		albums = json.load(f)
 	
 	# Choose random album
