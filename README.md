@@ -43,7 +43,7 @@ options:
 
 - [x] Get album picker working
 - [x] Restructure into a Python package
-- [ ] Publish package to PyPI
+- [x] Publish package to PyPI
 - [ ] Add documentation for use with pipx
 
 <!-- LICENSE -->
