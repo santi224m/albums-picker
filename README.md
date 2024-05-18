@@ -4,7 +4,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/santi224m/1001-albums-picker">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <img src="https://raw.githubusercontent.com/santi224m/1001-albums-picker/main/images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">1001 Albums Picker</h3>
@@ -55,5 +55,5 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [license-shield]: https://img.shields.io/github/license/santi224m/1001-albums-picker.svg?style=for-the-badge
 [license-url]: https://github.com/santi224m/1001-albums-picker/blob/main/LICENSE
-[terminal-screenshot]: images/screenshot.png
+[terminal-screenshot]: https://raw.githubusercontent.com/santi224m/1001-albums-picker/main/images/screenshot.png
 <a href="https://www.flaticon.com/free-icons/vinyl" title="vinyl icons">Vinyl icons created by Freepik - Flaticon</a>
