@@ -21,11 +21,28 @@
 
 Running the program selects an album at random from the book [1001 Albums You Must Hear Before You Die](https://en.wikipedia.org/wiki/1001_Albums_You_Must_Hear_Before_You_Die). The goal of the project is to help you find new music.
 
+<!-- INSTALLATION -->
+## Installation
+
+The recommended method for installing ```albums-picker``` is [pipx](https://pipx.pypa.io/stable/):
+
+```bash
+pipx install albums-picker
+```
+
+To use with pip instead:
+
+```bash
+pip install albums-picker
+```
+
 <!-- USAGE EXAMPLES -->
 ## Usage
 
+You can run ```albumsPicker``` just by typing:
+
 ```bash
-python main.py
+albumsPicker
 ```
 
 ```bash
@@ -37,14 +54,6 @@ options:
   -h, --help  show this help message and exit
   -j, --json  Print album in json format
 ```
-
-<!-- ROADMAP -->
-## Roadmap
-
-- [x] Get album picker working
-- [x] Restructure into a Python package
-- [x] Publish package to PyPI
-- [ ] Add documentation for use with pipx
 
 <!-- LICENSE -->
 ## License
