@@ -1,7 +1,8 @@
 import  argparse
 import json
+import os
 import random
-from album import Album
+from .album import Album
 
 ALBUMS_JSON_FILE = "albums.json"
 
@@ -19,7 +20,7 @@ def get_rand_album(albums):
 	album = Album(title, artist, year)
 	return album
 
-if __name__ == "__main__":
+def main():
   # Setup argument parser
 	parser = argparse.ArgumentParser(
 		prog='1001-albums-picker',
@@ -29,7 +30,9 @@ if __name__ == "__main__":
 	args = parser.parse_args()
   
   # Open albums list
-	with open(ALBUMS_JSON_FILE, encoding='utf8') as f:
+	script_dir = os.path.dirname(os.path.abspath(__file__))
+	albums_json_path = os.path.join(script_dir, ALBUMS_JSON_FILE)
+	with open(albums_json_path, encoding='utf8') as f:
 		albums = json.load(f)
 	
 	# Choose random album
@@ -40,3 +43,7 @@ if __name__ == "__main__":
 		print(rand_album.to_json())
 	else:
 		rand_album.print_album()
+
+
+if __name__ == "__main__":
+	main()

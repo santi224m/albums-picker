@@ -42,7 +42,7 @@ options:
 ## Roadmap
 
 - [x] Get album picker working
-- [ ] Restructure into a Python package
+- [x] Restructure into a Python package
 - [ ] Publish package to PyPI
 - [ ] Add documentation for use with pipx
 
