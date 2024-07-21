@@ -22,7 +22,7 @@ def main():
   # Setup argument parser
 	parser = argparse.ArgumentParser(
 		prog='1001-albums-picker',
-		description='Choose a random album from "1001 Albums You Must Hear Before You Die"',
+		description='Choose a random album from "1001 Albums You Must Hear Before You Die" or from "The Qobuz Essential Discography"',
   )
 	parser.add_argument('-j', '--json', action='store_true',
 										 help='Print album in json format')
