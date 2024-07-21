@@ -4,8 +4,6 @@ import os
 import random
 from .album import Album
 
-ALBUMS_JSON_FILE = "albums.json"
-
 def get_rand_album(albums):
 	"""
 	Return a random album
@@ -26,15 +24,24 @@ def main():
 		prog='1001-albums-picker',
 		description='Choose a random album from "1001 Albums You Must Hear Before You Die"',
   )
-	parser.add_argument('-j', '--json', action='store_true', help='Print album in json format')
+	parser.add_argument('-j', '--json', action='store_true',
+										 help='Print album in json format')
+	parser.add_argument('-q', '--qobuz', action='store_true',
+										 help='Choose an album from The Qobuz Essential Discography')
 	args = parser.parse_args()
-  
+
+	# Use The Qobuz Essential Discography json file if user uses --qobuz argument
+	if args.qobuz:
+		ALBUMS_JSON_FILE = 'qobuz_essential_discography.json'
+	else:
+		ALBUMS_JSON_FILE = 'albums.json'
+
   # Open albums list
 	script_dir = os.path.dirname(os.path.abspath(__file__))
 	albums_json_path = os.path.join(script_dir, ALBUMS_JSON_FILE)
 	with open(albums_json_path, encoding='utf8') as f:
 		albums = json.load(f)
-	
+
 	# Choose random album
 	rand_album = get_rand_album(albums)
 
@@ -43,7 +50,6 @@ def main():
 		print(rand_album.to_json())
 	else:
 		rand_album.print_album()
-
 
 if __name__ == "__main__":
 	main()
