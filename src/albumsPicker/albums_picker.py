@@ -33,8 +33,10 @@ def main():
 	# Use The Qobuz Essential Discography json file if user uses --qobuz argument
 	if args.qobuz:
 		ALBUMS_JSON_FILE = 'qobuz_essential_discography.json'
+		is_qobuz_album = True
 	else:
 		ALBUMS_JSON_FILE = 'albums.json'
+		is_qobuz_album = False
 
   # Open albums list
 	script_dir = os.path.dirname(os.path.abspath(__file__))
@@ -49,7 +51,7 @@ def main():
 	if args.json:
 		print(rand_album.to_json())
 	else:
-		rand_album.print_album()
+		rand_album.print_album(is_qobuz_album=is_qobuz_album)
 
 if __name__ == "__main__":
 	main()

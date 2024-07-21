@@ -17,10 +17,14 @@ class Album:
     d = {'title': self.title, 'artist': self.artist, 'year': self.year}
     return json.dumps(d, indent=4)
   
-  def print_album(self):
+  def print_album(self, *, is_qobuz_album=False):
     """Print album using rich console"""
     console = Console(soft_wrap=True)
-    table = Table(title="1001 Albums You Must Hear Before You Die")
+    if is_qobuz_album:
+      table_title = "The Qobuz Essential Discography"
+    else:
+      table_title = "1001 Albums You Must Hear Before You Die"
+    table = Table(title=table_title)
     table.add_column("Album title")
     table.add_column("Artist")
     table.add_column("Year")
